@@ -44,9 +44,12 @@ When clouds are blocked by some buildings or objects, the model would give wrong
 Sliding Window, R-CNN, Fast R-CNN
 
 **Current Progress**: 
+
 <img src = 'Readme img/dogecoin.jpg' width="600" height="400">
 
 
 ### Possible Extensions
+
 If detection and classification works well, we can generate captions for cloud images. To be specific in some sense, the caption would include types of clouds, the amount of clouds, and descriptions of objects in the background. We still use the same input. Now, we expect the output as:
+
 <img src = 'Readme img/Draft_Ex.jpg' width="420" height="694">
