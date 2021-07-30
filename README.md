@@ -5,7 +5,7 @@ The idea came into my mind sometime this May when I was strolling around my home
 
 Building an App for classifying clouds would be cool. It's not that fancy nor novel. In fact, some of the weather Apps already have this feature. As for me, my ultimate goal for this project is to develop an App (or a function in an App) that can detect the locations of clouds and classify the cloud types from a user's input image. For instance, suppose a user submits the image below:
 
-<img src = 'Readme img/Thunder.jpg' alt = "drawing" style ="width: 50px">
+<img src = 'Readme img/Thunder.jpg' width="50" height="100">
 
 We expect the output to be:
 
