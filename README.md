@@ -13,10 +13,10 @@ We expect the output to be:
 
 **Potential Choices**: 
 
-K-Nearest Neighbors, Linear Classification (Softmax loss or SVM loss), Convolutional Neural Network.  
+~~K-Nearest Neighbors~~, ~~Linear Classification (Softmax loss or SVM loss)~~, Convolutional Neural Network.  
 
 **Current Progress**: 
-<img src = 'Readme img/dogecoin.jpg' alt = "drawing" style ="width: 250px">
+<img src = 'Readme img/GetLucky.png' alt = "drawing" style ="width: 300px">
 
 ### Step 2: Develop a Detection Model to Locate Clouds in an Image
 
