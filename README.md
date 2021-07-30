@@ -22,18 +22,20 @@ We expect the output to be:
 
 We have built a classification model based on ResNet using transfer learning. We also design a basic web App interface using streamlit. However, the model still needs improvement. In the following sections, we will list the circumstance where the model would fail.
 
-#### Model Behavior - Case 1:
+### Model Behavior - Case 1:
 If clouds take up at least 50% of the image, the model could yield a decent prediction.
 
-<img src = 'Readme img/GetLucky.png' alt = "drawing" style ="width: 150px">
+<img src = 'Readme img/GetLucky.png' alt = "drawing" style ="width: 100px">
 
 ### Model Behavior - Case 2:
 If clouds take up fewer than 50% of the image, the prediction accuracy would be lower.
 
-<img src = 'Readme img/Smaller_Portion.png' alt = "drawing" style ="width: 150px">
+<img src = 'Readme img/Smaller_Portion.png' alt = "drawing" style ="width: 100px">
 
 ### Model Behavior - Case 3:
+When clouds are blocked by some buildings or objects, the model would give wrong predictions.
 
+<img src = 'Readme img/Blocked.png' alt = "drawing" style ="width: 100px">
 
 ### Step 2: Develop a Detection Model to Locate Clouds in an Image
 
@@ -42,9 +44,9 @@ If clouds take up fewer than 50% of the image, the prediction accuracy would be 
 Sliding Window, R-CNN, Fast R-CNN
 
 **Current Progress**: 
-<img src = 'Readme img/dogecoin.jpg' alt = "drawing" style ="width: 50px">
+<img src = 'Readme img/dogecoin.jpg' width="600" height="400">
 
 
 ### Possible Extensions
 If detection and classification works well, we can generate captions for cloud images. To be specific in some sense, the caption would include types of clouds, the amount of clouds, and descriptions of objects in the background. We still use the same input. Now, we expect the output as:
-<img src = 'Readme img/Draft_Ex.jpg' alt = "drawing" style ="width: 80px">
+<img src = 'Readme img/Draft_Ex.jpg' width="420" height="694">
