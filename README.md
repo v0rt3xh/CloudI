@@ -17,7 +17,12 @@ We expect the output to be:
 
 **Current Progress**: 
 
-<img src = 'Readme img/GetLucky.png' alt = "drawing" style ="width: 300px">
+We have built a classification model based on ResNet using transfer learning. We also design a basic web App interface using streamlit. However, the model still needs improvement. In the following sections, we will list the circumstance where the model would fail.
+
+### When you get lucky:
+If clouds take up at least 60% in the image, the model could give a decent prediction.
+
+<img src = 'Readme img/GetLucky.png' alt = "drawing" style ="width: 150px">
 
 ### Step 2: Develop a Detection Model to Locate Clouds in an Image
 
