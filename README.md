@@ -37,6 +37,20 @@ When clouds are blocked by some buildings or objects, the model would give wrong
 
 <img src = 'Readme img/Blocked.png' alt = "drawing" style ="width: 100px">
 
+### Possible Explanations and Remedies:
+
+From the view of our training dataset, a large number of our training images only contain clouds. In other words, clouds are the main character, and no other objects are present. One may argue that a brilliant model would be able to generalize to inputs with various backgrounds. But for clouds, things could be a bit different. First, clouds could relate to certain backgrounds. For instance, nimbostratus and stratus clouds (Ns, St) often appear at a pretty low altitude. Thus, most of the available images would include trees, mountains, or buildings. If a user input contains mainly buildings or roads, the model may have a higher probability to classify the cloud into (Ns, St). Below is an example, for which the correct type should be stratocumulus.
+
+<img src = 'Readme img/WrongNsSt.png' alt = "drawing" style ="width: 100px">
+
+A possible solution could be: we add training images where clouds appear together with other objects. But that leads to the second challenge: Some types of clouds have special shapes e.g.  altocumulus and cirrocumulus (Ac, Cc). Adding other irrelevant elements in the image may block or blur them. The image in **Model Behavior - Case 3** should be classified as (Ac, Cc) but the model did not. Should we introduce training images like this? Would the model still be easy to train? The answer remains unknown, but we can give it a try. P.s. Blurring or blocking is just like when classifying a cat or dog, if you draw some lines to block some features, the model may give the wrong prediction. [Link to the app](https://cat-dog-detection-tfjs.vercel.app/)
+
+<img src = 'Readme img/WrongDog.png' alt = "drawing" style ="width: 100px">
+
+At last, there could be different types of clouds in an image. And a cloud may be in the stage of transforming to the other, which makes the cloud resemble other types. They could be the toughest challenges, but they correspond to my ultimate goal: Detect all types of clouds in an image and mark them out. Anyway, in some scenarios, it's still hard to let the machine learn the right stuff. Check this out, a dog is classified as a cat:
+
+<img src = 'Readme img/WrongCat.png' alt = "drawing" style ="width: 100px">
+
 ### Step 2: Develop a Detection Model to Locate Clouds in an Image
 
 **Potential Choices**: 
