@@ -43,7 +43,9 @@ From the view of our training dataset, a large number of our training images onl
 
 <img src = 'Readme img/WrongNsSt.png' alt = "drawing" style ="width: 100px">
 
-A possible solution could be: we add training images where clouds appear together with other objects. But that leads to the second challenge: Some types of clouds have special shapes e.g.  altocumulus and cirrocumulus (Ac, Cc). Adding other irrelevant elements in the image may block or blur them. The image in **Model Behavior - Case 3** should be classified as (Ac, Cc) but the model did not. Should we introduce training images like this? Would the model still be easy to train? The answer remains unknown, but we can give it a try. P.s. Blurring or blocking is just like when classifying a cat or dog, if you draw some lines to block some features, the model may give the wrong prediction. [Link to the app](https://cat-dog-detection-tfjs.vercel.app/)
+A possible solution could be: we add training images where clouds appear together with other objects. But that leads to the second challenge: Some types of clouds have special shapes e.g.  altocumulus and cirrocumulus (Ac, Cc). Adding other irrelevant elements in the image may block or blur them. The image in **Model Behavior - Case 3** should be classified as (Ac, Cc) but the model did not. Should we introduce training images like this? Would the model still be easy to train? The answer remains unknown, but we can give it a try. P.s. Blurring or blocking is just like when classifying a cat or dog, if you draw some lines to block some features, the model may give the wrong prediction. 
+
+[Link to the app](https://cat-dog-detection-tfjs.vercel.app/)
 
 <img src = 'Readme img/WrongDog.png' alt = "drawing" style ="width: 100px">
 
