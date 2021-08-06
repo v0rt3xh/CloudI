@@ -7,6 +7,7 @@ import torchvision.utils as vutils
 from torchvision import models
 import torch.nn as nn
 import torch.nn.functional as F
+import os
 
 label_names = ['Altocumulus or Cirrocumulus', 'Altostratus or Cirrostratus', 
 'Cumulonimbus', 'Cirrus', 'Contrails', 'Cumulus', 
