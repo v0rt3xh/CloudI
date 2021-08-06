@@ -19,6 +19,7 @@ num_ftrs = model_ft.fc.in_features
 model_ft.fc = nn.Linear(num_ftrs, num_classes)
 path = os.path.dirname(__file__)
 themodel = path + "/ResNet_In390_Rotated_83_1.pt"
+descriptionPreflix = path + "/Descriptions"
 model_ft.load_state_dict(torch.load(themodel, map_location=torch.device('cpu')))
 model_ft.eval()
 CROP_SIZE = 390
@@ -44,5 +45,5 @@ def Cloud_Predictor(theCloud):
         _,predLabel = torch.max(preds, 1)
         labelndex = predLabel.item()
         predLabel = label_names[labelndex]
-        description_dir = path + "/Descriptions/" + label_acronym[labelndex] + ".txt"
+        description_dir = descriptionPreflix + "/" + label_acronym[labelndex] + ".txt"
     return top_p, predLabel, description_dir
