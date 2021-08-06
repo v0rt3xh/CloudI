@@ -18,8 +18,9 @@ num_classes = 8
 num_ftrs = model_ft.fc.in_features
 model_ft.fc = nn.Linear(num_ftrs, num_classes)
 path = os.path.dirname(__file__)
+print(path)
 themodel = path + "/ResNet_In390_Rotated_83_1.pt"
-descriptionPreflix = "/app/cloudi/Cloudi_demo/Descriptions"
+descriptionPreflix = path + "/Descriptions"
 model_ft.load_state_dict(torch.load(themodel, map_location=torch.device('cpu')))
 model_ft.eval()
 CROP_SIZE = 390
