@@ -12,13 +12,12 @@ import os
 label_names = ['Altocumulus or Cirrocumulus', 'Altostratus or Cirrostratus', 
 'Cumulonimbus', 'Cirrus', 'Contrails', 'Cumulus', 
 'Nimbostratus or Stratus', 'Stratocumulus']
-label_acronym = ['AcCc', 'AsCs', 'Cb', 'Ci', 'Ct', 'Cu', 'NsSt', 'Sc']
+label_acronym = ['/AcCc.txt', '/AsCs.txt', '/Cb.txt', '/Ci.txt', '/Ct.txt', '/Cu.txt', '/NsSt.txt', '/Sc.txt']
 model_ft = models.resnet18(pretrained=True)
 num_classes = 8
 num_ftrs = model_ft.fc.in_features
 model_ft.fc = nn.Linear(num_ftrs, num_classes)
 path = os.path.dirname(__file__)
-print(path)
 themodel = path + "/ResNet_In390_Rotated_83_1.pt"
 descriptionPreflix = path
 model_ft.load_state_dict(torch.load(themodel, map_location=torch.device('cpu')))
@@ -46,5 +45,5 @@ def Cloud_Predictor(theCloud):
         _,predLabel = torch.max(preds, 1)
         labelndex = predLabel.item()
         predLabel = label_names[labelndex]
-        description_dir = path + "/" + label_acronym[labelndex] + ".txt"
+        description_dir = descriptionPreflix + label_acronym[labelndex]
     return top_p, predLabel, description_dir
