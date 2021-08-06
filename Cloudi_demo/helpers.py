@@ -16,7 +16,9 @@ model_ft = models.resnet18(pretrained=True)
 num_classes = 8
 num_ftrs = model_ft.fc.in_features
 model_ft.fc = nn.Linear(num_ftrs, num_classes)
-model_ft.load_state_dict(torch.load("ResNet_In390_Rotated_83_1.pt"))
+path = os.path.dirname(__file__)
+themodel = path + "/ResNet_In390_Rotated_83_1.pt"
+model_ft.load_state_dict(torch.load(themodel))
 model_ft.eval()
 CROP_SIZE = 390
 
