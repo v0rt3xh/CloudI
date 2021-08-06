@@ -44,5 +44,5 @@ def Cloud_Predictor(theCloud):
         _,predLabel = torch.max(preds, 1)
         labelndex = predLabel.item()
         predLabel = label_names[labelndex]
-        description_dir = "Descriptions/" + label_acronym[labelndex] + ".txt"
+        description_dir = path + "/Descriptions/" + label_acronym[labelndex] + ".txt"
     return top_p, predLabel, description_dir
