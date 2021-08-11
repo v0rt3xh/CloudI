@@ -6,7 +6,7 @@ reminder = "Please upload your image below"
 user_inputImage = st.file_uploader(label = reminder)
 if user_inputImage is not None:
     from PIL import Image
-    imageDisplay = Image.open(user_inputImage)
+    imageDisplay = Image.open(user_inputImage).convert("RGB")
     st.image(imageDisplay, caption = "Your clouds", 
     use_column_width = 'auto')
     scores, prediction, des_dir = Cloud_Predictor(imageDisplay)
