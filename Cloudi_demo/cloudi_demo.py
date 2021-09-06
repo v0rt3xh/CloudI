@@ -15,7 +15,7 @@ if user_inputImage is not None:
     description_text = description.read()
     st.text("With prediction probability: " + "{:.3f}".format(scores))
     st.markdown(description_text)
-    st.markdown("*Definition Source*: [WMO](https://cloudatlas.wmo.int/zh-hans/descriptions-of-clouds.html)")
+    st.markdown("*Definition Source*: [WMO](https://cloudatlas.wmo.int/en/descriptions-of-clouds.html)")
 
 
 
