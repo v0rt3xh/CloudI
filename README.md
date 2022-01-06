@@ -1,5 +1,8 @@
 # CloudI
 ## CloudI: A classification tool for cloud images
+
+[Demo Link](https://share.streamlit.io/v0rt3xh/cloudi/main/Cloudi_demo/cloudi_demo.py)
+
 ### Goal of This Project
 The idea came into my mind sometime this May when I was strolling around my home. I was taking photos of the sky and there were some clouds in the images. According to my experiences, they should be cirrus clouds. Those clouds could be classified easily if you have learned the criterion before. What if someone just wants to know the type of clouds and does not have any experience? 
 
