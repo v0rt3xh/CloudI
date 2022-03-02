@@ -1,8 +1,8 @@
 # CloudI: A classification tool for cloud images
 
-<img src = 'Readme img/Thunder.jpg' width="420" height="694">
+<img src = 'Readme img/demo.jpg' width="420" height="694">
 
-[Demo Link](https://share.streamlit.io/v0rt3xh/cloudi/main/Cloudi_demo/cloudi_demo.py)
+You can access the demo by clicking the link: [Demo Link](https://share.streamlit.io/v0rt3xh/cloudi/main/Cloudi_demo/cloudi_demo.py)
 
 ## Project Status
 Project is: _in progress_. I'm planning to re-design the whole convolutional neural network structure.
