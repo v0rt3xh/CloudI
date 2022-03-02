@@ -1,6 +1,6 @@
 # CloudI: A classification tool for cloud images
 
-<img src = 'Readme img/demo.png' width="420" height="694">
+<img src = 'Readme img/demo.png' width="420" height="520">
 
 You can access the demo by clicking the link: [Demo Link](https://share.streamlit.io/v0rt3xh/cloudi/main/Cloudi_demo/cloudi_demo.py)
 
