@@ -3,6 +3,28 @@
 
 [Demo Link](https://share.streamlit.io/v0rt3xh/cloudi/main/Cloudi_demo/cloudi_demo.py)
 
+## Project Status
+Project is: _in progress_. I'm planning to re-design the whole convolutional neural network structure.
+
+## Room for Improvement
+
+Room for improvement:
+- Classification Performance currently is not that high (~83%)
+- Transfer Learning did not work well.
+
+To do:
+- Re-design the network structure.
+- Set up Google Cloud for better training environment.
+
+
+## Acknowledgements
+
+- The dataset I used was modified based on their work: [Link](https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2018GL077787)
+
+
+## Contact
+Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+
 ### Goal of This Project
 The idea came into my mind sometime this May when I was strolling around my home. I was taking photos of the sky and there were some clouds in the images. According to my experiences, they should be cirrus clouds. Those clouds could be classified easily if you have learned the criterion before. What if someone just wants to know the type of clouds and does not have any experience? 
 
