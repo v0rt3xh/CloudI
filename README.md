@@ -1,4 +1,4 @@
-# CloudI: A classification tool for cloud images
+# CloudI: A Image Classifier for Clouds
 
 <img src = 'Readme img/demo.png' width="420" height="520">
 
@@ -6,6 +6,24 @@ You can access the demo by clicking the link: [Demo Link](https://share.streamli
 
 ## Project Status
 Project is: _in progress_. I'm planning to re-design the whole convolutional neural network structure.
+
+## Behind the Scene
+
+**Dataset**: The dataset consists of 8 classes of clouds with the following distribution:
+- Altocumulus & Cirrocumulus: 251 images 
+- Altostratus & Cirrostratus: 139 images
+- Contrail: 145 images
+- Cirrus: 162 images
+- Cumulonimbus: 223 images
+- Cumulus: 142 images
+- Nimbostratus & Stratus: 216 images
+- Stratocumulus: 186 images
+
+All images are of size 400 X 400, RGB channels.
+
+**Programming Tool**: PyTorch on Python with CUDA.
+
+**Model**: Transfer Learning on pretrained ResNet.
 
 ## Room for Improvement
 
@@ -30,7 +48,7 @@ Created by [@Haitao Huang](https://v0rt3xh.github.io/) - feel free to contact me
 
 **The following sections would be a bit messy, and I will remove them to my blog.**
 
-### Goal of This Project
+## Goal of This Project
 The idea came into my mind sometime this May when I was strolling around my home. I was taking photos of the sky and there were some clouds in the images. According to my experiences, they should be cirrus clouds. Those clouds could be classified easily if you have learned the criterion before. What if someone just wants to know the type of clouds and does not have any experience? 
 
 Building an App for classifying clouds would be cool. It's not that fancy nor novel. In fact, some of the weather Apps already have this feature. As for me, my ultimate goal for this project is to develop an App (or a function in an App) that can detect the locations of clouds and classify the cloud types from a user's input image. For instance, suppose a user submits the image below:
