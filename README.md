@@ -1,4 +1,4 @@
-# CloudI: A Image Classifier for Clouds
+# CloudI: An Image Classifier for Clouds
 
 <img src = 'Readme img/demo.png' width="420" height="520">
 
